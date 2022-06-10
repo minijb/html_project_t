@@ -1,0 +1,416 @@
+html,
+body,
+.flex,
+article {
+    height: 100%;
+}
+
+.flex article {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex .top {
+    height: 15.5%;
+    background: #002060;
+}
+
+.flex .middle {
+    flex: 1;
+    height: 100%;
+    background-color: #f2f2f2;
+    background-size: 100% 100%;
+    overflow-y: auto;
+}
+
+.flex .bottom {
+    height: 7%;
+    background: #2f5597;
+}
+
+p#p1 {
+    color: #EEEEEE;
+    font-size: 30px;
+}
+
+.left-group {
+    width: 33%;
+    text-align: left;
+    float: left;
+    font-size: 20px;
+    color: #EEEEEE;
+}
+
+.right-group {
+    width: 33%;
+    text-align: right;
+    float: left;
+    font-size: 20px;
+    color: #EEEEEE;
+}
+
+.mid-group {
+    /*flex: 1;*/
+    width: 34%;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    color: #EEEEEE;
+}
+
+/* 导航条 */
+.topnav {
+    overflow: hidden;
+    background-color: #9dc3e6;
+    height: 100%;
+}
+
+/* 导航链接 */
+.topnav li {
+    float: left;
+    display: block;
+    color: #002060;
+    text-align: center;
+    padding: 0px 40px;
+    text-decoration: none;
+}
+
+.topnav li a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 0px 40px;
+    text-decoration: none;
+}
+
+/* 链接 - 修改颜色 */
+.topnav li a:hover {
+    background-color: #9dc3e6;
+    color: white;
+    font-size: 20px;
+}
+
+#button1 {
+    background: transparent;
+    color: #EEEEEE;
+    border: 2px solid white;
+}
+
+/* 创建两个不相等的列 */
+/* 左侧宽度 */
+.buju_side {}
+
+/* 中间区域宽度 */
+.buju_middle {}
+
+/* 列后面清除浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.h1-1 {
+    color: #002060;
+}
+
+.team1 {
+    float: left;
+    width: 20%;
+    height: 220px;
+    background-color: #dce9f2;
+}
+
+.team2 {
+    float: left;
+    width: 79%;
+    height: 220px;
+    background-color: #dce9f2;
+}
+
+.img-a {
+    width: 90px;
+    text-align: center;
+    padding-left: 15px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.team2-1 {
+    float: left;
+    width: 19.5%;
+    height: 100%;
+}
+
+#Funding_WenZi {
+    left: 120px;
+    top: 200px;
+    color: #002060;
+    width: 98%;
+    height: 145px;
+    border: 2px solid #002060;
+    padding: 5px;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+.buju_side ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    background-color: #f1f1f1;
+}
+
+.buju_side li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.buju_side li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buju_side li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.bianse {
+    color: #0000ff;
+}
+
+.bianse1 {
+    color: #002060;
+}
+
+.h1-1 {
+    color: #002060;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img_test {
+    color: #002060;
+    align-self: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+.td_element {
+    height: 20ch;
+    width: 20ch;
+    clear: auto;
+}
+
+.u06_img {
+    width: 64px;
+    height: 58px;
+}
+
+.u06_div {
+    float: left;
+}
+
+.block {
+    display: block;
+    clear: both;
+}
+
+.td_img {
+    padding-left: 30px;
+}
+
+.middle_left {
+    margin-left: 10ch;
+}
+
+.middle_left_title {
+    font-family: 'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: #000080;
+    text-align: center;
+}
+
+.middle_right {
+    margin-right: 10ch;
+    width: 800;
+    height: 880px;
+    /* background-color: #000; */
+}
+
+.ax_father {
+    display: flex;
+    flex-direction: row;
+}
+
+.ax_default {
+    /* float: left; */
+    display: flex;
+    font-size: 20px;
+    color: #999999;
+    line-height: 16px;
+    width: 200px;
+    height: 50px;
+    background-size: 100% 100%;
+    background-image: url(../Img/access_data_search/u_nagtive.svg);
+
+}
+
+
+.ax_default .ax_text {
+    word-wrap: break-word;
+    text-transform: none;
+    width: 100%;
+    display: flex;
+
+}
+
+.ax_text .text {
+    align-self: center;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+.ax_postive {
+    /* float: left; */
+    display: flex;
+    font-size: 20px;
+    color: #EEEEEE;
+    line-height: 16px;
+    width: 200px;
+    height: 50px;
+    background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-image: url(../Img/access_data_search/u_postive.svg);
+
+}
+
+
+.ax_postive .ax_text {
+    word-wrap: break-word;
+    text-transform: none;
+    width: 100%;
+    display: flex;
+
+}
+
+.ax_text .text {
+    align-self: center;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+
+.None {
+    width: 100%;
+    height: 50px;
+}
+
+.right_table {
+    width: 100%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(0, 32, 96, 1);
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+}
+
+.table_title {
+    width: 100%;
+    height: 50px;
+    background-image: url(../Img/access_data_right_table/title.svg);
+    background-size: 100% 50px;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: #F2F2F2;
+}
+
+.table_title .text {
+    padding-top: 8px;
+    align-self: center;
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.table_button {
+    height: 50px;
+    display: flex;
+    justify-content: center
+    
+}
+
+.table_text {
+    height: 50px;
+    /* background-color: #4CAF50; */
+    display: flex;
+    justify-content: center
+
+}
+
+.table_blank {
+    height: 50px;
+    width: 100%;
+}
+
+
+
+
+
+.table_b_b{
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    border-radius:10px; 
+    background-color: rgba(0, 112, 192, 1);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(121, 121, 121, 1);
+    font-size: 20px;
+    color: #F2F2F2;
+    display: flex;
+    justify-content: center
+}
+
+.table_b_b .text{
+    margin: auto;
+}
+
+.table_text .text{
+    margin: auto;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000080;
+}
+
+.table_blank .text{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 1);
+    border-width: 2px;
+    border-color: #000;
+    border-style: solid;
+    font-weight:400;
+    font-size: 20px;
+}
+
+.table_blank .text div{
+    padding-top: 10px;
+}

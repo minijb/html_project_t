@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function showsubmenu(sid) {
+            for (i = 1; i < 4; i++) {
+                if (i == sid) {
+                    if (document.getElementById(sid).className != "bianse") {
+                        document.getElementById(sid).className = "bianse"
+                    }
+                } else {
+                    document.getElementById(i).className = "bianse1";
+                }
+            }
+        }
+    </script>
+</head>
+<link rel="stylesheet" type="text/css" href="..\css\zy_04_access_data.css">
+
+<body>
+
+    <section class="top-bottom flex">
+        <article>
+            <div class="top">
+                <div>
+                    <p id="p1">
+                        Ocean Sediment Database
+                        <button type="button" style="float: right;width: 150px;height: 40px;border-radius:15px;border-color: white;
+                            color: #a5aab0;font-weight: bold;background:transparent;margin-right: 20px">
+                            <img src="../Img/登录.png" style="width: 20px">
+                            <div style="float: right;padding-top: 5px">Login/Register</div>
+                        </button>
+                    </p>
+                </div>
+                <div class="topnav">
+                    <ul>
+                        <li><a id="1" class="bianse1" href="Home.html" onclick="showsubmenu(this.id)">Home</a></li>
+                        <li><a id="2" class="bianse" href="./Introduction.html"
+                                onclick="showsubmenu(this.id)">Introducation</a></li>
+                        <li><a class="bianse1" href="#">Acces Data</a></li>
+                        <li><a class="bianse1" href="#">Submit Data</a></li>
+                        <li><a id="3" class="bianse1" href="about_as.html" onclick="showsubmenu(this.id)">About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="row">
+                    <div class="middle_left" style="float: left;">
+                        <div>
+                            <div class="middle_left_title">
+                                Find & Select Sample &Data
+                            </div>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="td_element">
+                                            <div><img class="td_img" src="../Img/u01.svg" alt=""></div>
+                                            <div class="img_test">By Location</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td_element">
+                                            <div><img class="td_img" src="../Img/u02.png" alt=""></div>
+                                            <div class="img_test">By Program & Cruise</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td_element">
+                                            <div><img class="td_img" src="../Img/u03.png" alt=""></div>
+                                            <div class="img_test">By Age</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td_element">
+                                            <div><img class="td_img" src="../Img/u04.png" alt=""></div>
+                                            <div class="img_test">By Element Chemistry</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td_element">
+                                            <div><img class="td_img" src="../Img/u05.png" alt=""></div>
+                                            <div class="img_test">By Element Chemistry</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td_element" id="u06_father">
+                                            <div class="td_img">
+                                                <div class="u06_div"><img class="u06_img" src="../Img/u06_1.png" alt="">
+                                                </div>
+                                                <div class="u06_div"><img class="u06_img" src="../Img/u06_2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="td_img">
+                                                <div class="u06_div"><img class="u06_img" src="../Img/u06_3.png" alt="">
+                                                </div>
+                                                <div class="u06_div"><img class="u06_img" src="../Img/u06_4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <block class="block"></block>
+                                            <div class="img_test">By CNHS content</div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td_element">
+                                            <div><img class="td_img" src="../Img/u07.png" alt=""></div>
+                                            <div class="img_test">By Source RockAnalysis (SRA)</div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="middle_right" style="float: right;">
+                        <div>
+                            <div class="ax_father">
+
+                                <span class="ax_postive" id="ax_1">
+                                    <div class="ax_text">
+                                        <span class="text">Select Sample</span>
+                                    </div>
+                                </span>
+                                <span class="ax_default" id="ax_2">
+                                    <div class="ax_text">
+                                        <span class="text">Select Sample</span>
+                                    </div>
+                                </span>
+                                <span class="ax_default" id="ax_3">
+                                    <div class="ax_text">
+                                        <span class="text">Select Sample</span>
+                                    </div>
+                                </span>
+                                <span class="ax_default" id="ax_4">
+                                    <div class="ax_text">
+                                        <span class="text">Select Sample</span>
+                                    </div>
+                                </span>
+                            </div>
+                            <block class="block"></block>
+                            <div class="None"></div>
+                            <div>
+                                <table class="right_table" rules="rows">
+                                    <tr>
+                                        <td colspan="4" >
+                                            <div class="table_title">
+                                                <div class="text"><span >Search Criteria</span></div>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="right_table_content">
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Clear</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Set</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 20%;">
+                                            <div class="table_text" >
+                                                <div class="text"><span>Location:</span></div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 50%;"">
+                                            <div class="table_blank">
+                                                <div class="text">
+                                                    <div><span> </span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="right_table_content">
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Clear</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Set</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 20%;">
+                                            <div class="table_text" >
+                                                <div class="text"><span>Location:</span></div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 50%;"">
+                                            <div class="table_blank">
+                                                <div class="text">
+                                                    <div><span> </span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="right_table_content">
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Clear</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Set</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 20%;">
+                                            <div class="table_text" >
+                                                <div class="text"><span>Location:</span></div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 50%;"">
+                                            <div class="table_blank">
+                                                <div class="text">
+                                                    <div><span> </span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="right_table_content">
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Clear</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Set</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 20%;">
+                                            <div class="table_text" >
+                                                <div class="text"><span>Location:</span></div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 50%;"">
+                                            <div class="table_blank">
+                                                <div class="text">
+                                                    <div><span> </span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="right_table_content">
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Clear</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Set</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 20%;">
+                                            <div class="table_text" >
+                                                <div class="text"><span>Location:</span></div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 50%;"">
+                                            <div class="table_blank">
+                                                <div class="text">
+                                                    <div><span> </span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="right_table_content">
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Clear</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Set</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 20%;">
+                                            <div class="table_text" >
+                                                <div class="text"><span>Location:</span></div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 50%;"">
+                                            <div class="table_blank">
+                                                <div class="text">
+                                                    <div><span> </span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="right_table_content">
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Clear</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 15%;">
+                                            <div class="table_button">
+                                                <div class="table_b_b">
+                                                    <div class="text"><span>Set</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 20%;">
+                                            <div class="table_text" >
+                                                <div class="text"><span>Location:</span></div>
+                                            </div>
+                                        </td>
+                                        <td style="width: 50%;"">
+                                            <div class="table_blank">
+                                                <div class="text">
+                                                    <div><span> </span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                            <div class="None"></div>
+                            <div>3</div>
+                            <div class="None"></div>
+                            <div>4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="left-group">Pert of OneSediment in the DDE</div>
+                <div class="mid-group">Funded by the NSFC</div>
+                <div class="right-group">Ocean Sediment Database,Copyright @ 2022</div>
+            </div>
+        </article>
+    </section>
+
+</body>
+
+</html>
