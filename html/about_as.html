@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="../js/jquery.js" type="text/javascript"></script>
     <script type="text/javascript">
         function showsubmenu(sid) {
             for (i = 1; i < 4; i++) {
@@ -31,10 +32,10 @@
                 <div>
                     <p id="p1">
                         Ocean Sediment Database
-                        <button type="button" style="float: right;width: 150px;height: 40px;border-radius:15px;border-color: white;
-                          color: #a5aab0;font-weight: bold;background:transparent;margin-right: 20px">
+                        <button type="button" class="login_button" style="float: right;width: 150px;height: 40px;border-radius:15px;border-color: white;
+                            color: #a5aab0;font-weight: bold;background:transparent;margin-right: 20px">
                             <img src="../Img/登录.png" style="width: 20px">
-                            <div style="float: right;padding-top: 5px">Login/Register</div>
+                            <div id="login_name" style="float: right;padding-top: 5px">Login/Register</div>
                         </button>
                     </p>
                 </div>
@@ -272,8 +273,10 @@
                 <div class="right-group">Ocean Sediment Database,Copyright @ 2022</div>
             </div>
         </article>
+        <div id="shade" class="c1 hide"></div>
+        <iframe id="page" class="c2 hide" src="login.html" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
     </section>
-
+    <script src="../js/login.js"></script>
 </body>
 
 </html>

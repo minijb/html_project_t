@@ -167,3 +167,32 @@ div#database03 {
 .bianse1 {
     color: #002060;
 }
+
+.hide {
+    display: none;
+}
+
+.c1{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+    z-index: 10;
+}
+.c2{
+    background-color: white;
+    position: fixed;
+    width: 781px;
+    height: 586px;
+    top: 40%;
+    left: 40%;
+    z-index: 3;
+    margin-top: -150px;
+    margin-left: -200px;
+    z-index: 11;
+    border-radius: 21px;
+    overflow: hidden;
+}
