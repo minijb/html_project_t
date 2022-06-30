@@ -18,8 +18,11 @@ function add(e){
     }
     checks = table.find('input[name="select"]');
     list_options = [];
+    global_flag = 0 ; 
+    alert_text = "";
     for(var i of checks){
         if(i.checked){
+            flag = 0;
             option = {};
             value = i.value;
             option['min'] = document.getElementById("min_"+value).value;
@@ -31,9 +34,22 @@ function add(e){
             }else{
                 option['nor'] = "AND";
             }
-            list_options.push(option);
+            if(option['min']==''||option['max']==''){
+                alert_text += option['des']+"条目有空值，请输入后继续\n";
+                flag=1;
+                global_flag=1;
+            } 
+            if(flag==0){
+                if(Number(option['min'])>Number(option['max'])){
+                    alert_text += option['des']+"条目最小值大于最大值,请重新输入\n";
+                    flag=1;
+                    global_flag=1;
+                }
+            }
+            if(flag!=1)        list_options.push(option);
         }
     }
+    
     ll = []
     for(var i of list_options){
         var op = document.createElement("option");
@@ -45,6 +61,9 @@ function add(e){
     }
     for(var i = ll.length-1 ; i >=0 ; i--){
         end.after(ll[i]);
+    }
+    if(global_flag==1){
+        alert(alert_text);
     }
 
 }
