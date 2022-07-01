@@ -483,3 +483,9 @@ input::-webkit-input-placeholder {
     border-radius: 21px;
     overflow: hidden;
 }
+
+input[type="checkbox"]{
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+}

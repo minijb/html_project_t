@@ -83,8 +83,8 @@
                             <div class="con_line">
                                 <div class="con_block"></div>
                                 <select class="text">
-                                    <option >Select by Era or Period ...</option>
-                                    <option value="">Cenozoic (0 Ma - 66.0 Ma)</option>
+                                    <option disabled hidden selected value>--Select by Era or Period --</option>
+                                    <option value="" >Cenozoic (0 Ma - 66.0 Ma)</option>
                                     <option value="">Mesozoic (66.0 Ma - 251.902 Ma)</option>
                                     <option value="">Quaternary (0 Ma - 2.58 Ma)</option>
                                     <option value="">Neogene (2.58 Ma - 23.03 Ma)</option>
@@ -96,7 +96,7 @@
                             <div class="con_line">
                                 <div class="con_block"><span>or</span></div>
                                 <select class="text">
-                                    <option value="">Select by Epoch ...</option>
+                                    <option value="" disabled hidden selected value>--Select by Epoch --</option>
                                     <option value="">Holocene (0 Ma - 0.0117 Ma)</option>
                                     <option value="">Pleistocene (0.0117 Ma - 2.58 Ma)</option>
                                     <option value="">Pliocene (2.58 Ma - 5.333 Ma)</option>
@@ -111,7 +111,7 @@
                             <div class="con_line">
                                 <div class="con_block"><span>or</span></div>
                                 <select class="text">
-                                    <option value="">Select by Age ...</option>
+                                    <option value="" disabled hidden selected value>--Select by Age --</option>
                                     <option value="">Meghalayan (0 Ma - 0.0042 Ma)</option>
                                     <option value="">Northgrippian (0.0042 Ma - 0.0082 Ma)</option>
                                     <option value="">Greenlandian (0.0082 Ma - 0.0117 Ma)</option>
@@ -156,7 +156,8 @@
                     <div class="box">
                         <div class="title">Age Exists</div>
                         <div class="con_img">
-                            <img class="img_bu" con=0 src="../Img/select_by_age/u251.svg" alt="">
+                            <input type="checkbox" id="img_bu" con=0  alt="">
+                            <label for="img_bu"></label>
                         </div>
                         <div class="con_text">
                             <span>return all samples that have age values assoicated with them
